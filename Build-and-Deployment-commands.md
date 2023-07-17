@@ -1,11 +1,22 @@
-Docker Commands for profile-management service
-building image
-1. docker build . -t litheshp/profile-managament:latest
-checking the available images of local machine
-1. docker images
-running image
-2. docker run -p 3000:3000 litheshp/profile-managament -d
-checking the container 
-docker ps
+## Docker Commands for profile-management service
+### building image
+ ```docker build . -t litheshp/profile-managament:latest```
+### checking the available images of local machine
+ ```docker images```
+### running image
+```docker run -p 3000:3000 litheshp/profile-managament -d```
+### checking the container 
+```docker ps```
 
-Kubernetes commands 
+## Minikub
+## start
+- ```minikube start```
+## tunneling
+- ```minikube service car-parking-booking-service --url```
+## Kubernetes commands 
+- ```kubectl create -f deployment.yml```
+- ```kubectl get pods```
+- ```kubectl get service```
+  
+  
+
