@@ -5,7 +5,7 @@
  ```docker images```
 ### running image
 ```docker run -p 3000:3000 litheshp/profile-managament -d```
-### checking the container 
+### List the containers
 ```docker ps```
 
 ## Minikub
