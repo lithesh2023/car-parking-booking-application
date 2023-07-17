@@ -20,7 +20,7 @@ spec:
         - name: car-parking-booking
           image: litheshp/profile-managament:latest
           ports:
-            - containerPort: 80
+            - containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
@@ -32,7 +32,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - targetPort: 80
+    - targetPort: 3000
       port: 80
       nodePort: 30008
   selector:
